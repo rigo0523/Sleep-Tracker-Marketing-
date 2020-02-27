@@ -1,0 +1,32 @@
+//button mixin and display flex mixing to position elements 
+
+
+
+// we can use this button to customize it to any with, background and color by using just 3 arguments inside of it
+.button(@bg-color: ??, @width:??, @font-color: ??// add color here){
+    display: block;
+    background-color: @bg-color; // argument 1
+    cursor: pointer;
+    width: @width; // argument 2
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@font-color; // argument 3
+    text-align: center;
+    line-height: 2em;
+    &:hover {
+        background: @button-bg;
+        color: @shark;
+    } // a: hover 
+}
+
+.displayFlex(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.flexDirection(@direction) {
+    flex-direction: @direction;
+}
+
